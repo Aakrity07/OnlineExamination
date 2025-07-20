@@ -29,12 +29,10 @@ app.get("/login.html", (req, res) => {
 // ✅ Register route
 app.post("/register", (req, res) => {
   const { firstName, lastName, email, password } = req.body;
-
+  const newUser = { firstName, lastName, email, password };
   if (!email || !password) {
     return res.status(400).send("Email and password are required.");
   }
-
-  const newUser = { firstName, lastName, email, password };
 
   let users = [];
   if (fs.existsSync(DATA_FILE)) {
@@ -44,7 +42,8 @@ app.post("/register", (req, res) => {
 
   const existingUser = users.find(user => user.email === email);
   if (existingUser) {
-    return res.status(409).send("User already exists");
+    return res.status(409).json({ message: "User already exists" });
+
   }
 
   users.push(newUser);
