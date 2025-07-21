@@ -7,7 +7,7 @@ const reviewStatus = Array(totalQuestions).fill(false);
 const questionButtons = [];
 let totalSeconds = 20 * 60;
 let userAnswers = new Array(20).fill(null);
-
+//timer
 function timer(n) {
   return n < 10 ? "0" + n : n;
 }
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
       displayQuestion(currentQuestionIndex);
     });
   }
-
+//previous button
   document.getElementById("prev-btn").addEventListener("click", () => {
     saveAnswerStatus(currentQuestionIndex);
     if (currentQuestionIndex > 0) {
@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
       displayQuestion(currentQuestionIndex);
     }
   });
+  //next button
 
   document.getElementById("next-btn").addEventListener("click", () => {
     saveAnswerStatus(currentQuestionIndex);
@@ -62,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
       displayQuestion(currentQuestionIndex);
     }
   });
+  //for model pop-up
 
   document.getElementById("submit").addEventListener("click", () => {
     model_container.classList.add("show");
@@ -80,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
     userAnswers[currentQuestionIndex] = e.target.value;
   });
 });
-
+//fetching question from json file using API
 function fetchQuestions() {
   fetch("./Question.Json")
     .then(res => res.json())
@@ -93,7 +95,7 @@ function fetchQuestions() {
       document.getElementById("question-text").textContent = "Failed to load questions.";
     });
 }
-
+//for displaying question
 function displayQuestion(index) {
   const question = questions[index];
   const optionsContainer = document.getElementById("options-container");
@@ -102,7 +104,7 @@ function displayQuestion(index) {
   document.getElementById("question-text").textContent = question.question;
   document.getElementById("file").value = Math.floor(((index + 1) / totalQuestions) * 100);
 
-  // Clear options
+   // for adding options
   optionsContainer.innerHTML = "";
   question.options.forEach((option, i) => {
     const div = document.createElement("div");
@@ -128,14 +130,14 @@ function displayQuestion(index) {
 
   markActive(index);
 }
-
+//for saving answer status
 function saveAnswerStatus(index) {
   const marked = document.querySelector('input[name="mark"]')?.checked;
   const selected = document.querySelector('input[name="option"]:checked');
   const btn = questionButtons[index];
 
   btn.classList.remove("status-active", "status-not-visited", "status-answered", "status-review", "status-not-answered");
-//mark button
+//for coloring  button
   if (marked) {
     reviewStatus[index] = true;
     btn.classList.add("status-review");
@@ -151,13 +153,13 @@ function markActive(index) {
   questionButtons.forEach((btn, i) => {
     if (i !== index) btn.classList.remove("status-active");
   });
-
+//for active status
   const btn = questionButtons[index];
   btn.classList.remove("status-not-visited", "status-not-answered");
   btn.classList.add("status-active");
   visitedStatus[index] = true;
 }
-//checki
+//checking wrong /right answers and calculate scode and summary
 function calculateAndSubmit() {
   const correctAnswers = ["42", "25", "V", "7.5°", "22", "15", "20", "120", "M", "Carrot",
     "4.50", "1/2", "Circle", "10 cents", "37", "Tuesday", "Thursday", "19", "Quarter and a nickel", "25"
@@ -167,6 +169,7 @@ function calculateAndSubmit() {
   let summaryData = [];
   var dd = questions;
 debugger
+//here store user's answered data and unanswred
   for (let i = 0; i < 20; i++) {
     const questionNum = i + 1;
     const ddq = dd[i].question;
@@ -175,6 +178,7 @@ debugger
 
     if (selected === correctAns) correct++;
 debugger
+//push data to summary page
     summaryData.push({
       id: `Q${questionNum}`,
       question: ddq,
@@ -183,6 +187,7 @@ debugger
     });
   }
 debugger
+//calculatescode
   const score = Math.round((correct / 20) * 100);
   localStorage.setItem('score', score);
   localStorage.setItem('summary', JSON.stringify(summaryData));
