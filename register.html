@@ -108,7 +108,7 @@
                 <div class="row p-2">
                     <div class="">
                         <input type="email" name="" id="" class="form-control"
-                            placeholder="Phone Number or email address">
+                            placeholder=" Enter email address">
                         <span class="error" id="emailerror"></span>
 
                     </div>
@@ -226,7 +226,7 @@
                 document.getElementById("passworderror").innerHTML="<strong>Invalid password</strong> Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character:"
                 return false;
             }
-debugger
+            
             fetch("/register", {
     method: "POST",
     headers: { "Content-Type": "application/json" },

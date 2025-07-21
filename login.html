@@ -44,16 +44,19 @@ document.querySelector("input[value='Log in']").addEventListener("click", () => 
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ email, password })
   })
+  
     .then(res => res.text())
     .then(msg => {
       alert(msg);
       if (msg === "Login successful") {
         // redirect to dashboard or success page if needed
         alert("Welcome!");
+        window.location.href='/intro/intro.html';
       }
     })
     .catch(err => alert("Error: " + err));
 });
+
 </script>
 
 
