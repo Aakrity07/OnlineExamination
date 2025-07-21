@@ -15,22 +15,26 @@
 </head>
 
 <body>
-    <div class="container text-center my-4">
-        <img src="elgoss.jpg" alt="elgoss" style="width: 200px; height: 50px;">
-    </div>
+    <!-- <form method="post" onsubmit="return validation()"> -->
+        <div class="container text-center my-4">
+            <img src="elgoss.jpg" alt="elgoss" style="width: 200px; height: 50px;">
+        </div>
 
-    <div class="container shadow-lg rounded col-5  mt-2 mb-5 py-2">
+        <div class="container shadow-lg rounded col-5  mt-2 mb-5 py-2">
 
-        <h3 class="text-center pt-2">Create a new Account</h3>
-        <p class="text-center">Its Quick and easy</p>
-        <hr>
-        <div class="container">
-            <div class="row my-2">
-                <div class="col-6">
-                    <input type="text" name="firstName" id="firstName" placeholder="first Name" class="form-control">
-                </div>
-                <div class="col-6 ">
-                    <input type="text" name="lastName" id="lastName" placeholder="last Name" class="form-control">
+            <h3 class="text-center pt-2">Create a new Account</h3>
+            <p class="text-center">Its Quick and easy</p>
+            <hr>
+            <div class="container">
+                <div class="row my-2">
+                    <div class="col-6">
+                        <input type="text" name="firstName" id="firstName" placeholder="first Name"
+                            class="form-control">
+                        <span class="error" id="fnameerror"></span>
+                    </div>
+                    <div class="col-6 ">
+                        <input type="text" name="lastName" id="lastName" placeholder="last Name" class="form-control">
+                        <span class="error" id="lnameerror"></span>
 
                     </div>
                 </div>
@@ -100,55 +104,44 @@
                 </div>
             </div>
 
-        <div class="container">
-            <div class="row p-2">
-                <div class="">
-                    <input type="email" name="" id="" class="form-control" placeholder="Phone Number or email address">
-                </div>
+            <div class="container">
+                <div class="row p-2">
+                    <div class="">
+                        <input type="email" name="" id="" class="form-control"
+                            placeholder=" Enter email address">
+                        <span class="error" id="emailerror"></span>
 
-            </div>
-            <div class="row p-2">
-                <div class="">
-                    <input type="password" name="" id="" class="form-control" placeholder=" New password">
-                </div>
-            </div>
-            <p class="small text-secondary ">Welcome to the Online Examination Portal! Register now to take your first
-                step towards academic success.
-                Our platform offers a smooth, secure, and user-friendly exam experience from the comfort of your home.
-            </p>
-            <p class="small text-secondary">Don’t miss the opportunity to test your knowledge, improve your performance,
-                and achieve your goals. Join today and stay ahead in your learning journey!</p>
-        </div>
-        <div class="container d-flex justify-content-center">
+                    </div>
 
-            <button class="btn btn-primary px-5 text-center align-item-center" type="submit" id="registerBtn">Sign
-                Up</button>
+                </div>
+                <div class="row p-2">
+                    <div class="">
+                        <input type="password" name="" id="pass" class="form-control" placeholder=" New password">
+                        <span class="error" id="passworderror"></span>
+
+                    </div>
+                </div>
+                <p class="small text-secondary ">Welcome to the Online Examination Portal! Register now to take your
+                    first
+                    step towards academic success.
+                    Our platform offers a smooth, secure, and user-friendly exam experience from the comfort of your
+                    home.
+                </p>
+                <p class="small text-secondary">Don’t miss the opportunity to test your knowledge, improve your
+                    performance,
+                    and achieve your goals. Join today and stay ahead in your learning journey!</p>
+            </div>
+            <div class="container d-flex justify-content-center">
+
+                <button class="btn btn-primary px-5 text-center align-item-center" type="submit" id="registerBtn"
+                >Sign Up</button>
+            </div>
+            <div class="container p-2 text-center">
+                <a href="login.html" class="">Already have an Account? </a>
+            </div>
         </div>
-        <div class="container p-2 text-center">
-            <a href="login.html" class="">Already have an Account? </a>
-        </div>
-    </div>
+    <!-- </form> -->
     <script>
-        document.querySelector("button.btn-primary").addEventListener("click", () => {
-  const firstName = document.getElementById("firstName").value;
-  const lastName = document.getElementById("lastName").value;
-  const email = document.querySelector("input[type='email']").value;
-  const password = document.querySelector("input[type='password']").value;
-
-  fetch("/register", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ firstName, lastName, email, password })
-  })
-    .then(res => res.text())
-    .then(msg => {
-      alert(msg);
-      if (msg === "Registration successful") {
-        window.location.href = "login.html";
-      }
-    })
-    .catch(err => alert("Error: " + err));
-});
         const daySelect = document.getElementById("dob-day");
         for (let d = 1; d < 32; d++) {
             const option = document.createElement("option");
