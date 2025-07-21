@@ -124,9 +124,19 @@ function displayQuestion(index) {
   // Reset mark checkbox
   const markBox = document.querySelector('input[name="mark"]');
   if (markBox) markBox.checked = false;
-
-  document.getElementById("prev-btn").disabled = index === 0;
-  document.getElementById("next-btn").disabled = index === questions.length - 1;
+//Hide Previous and Next button when first and last question
+if(index===0)
+{
+  document.getElementById("prev-btn").classList.add('hide');
+}
+else if(index===questions.length-1)
+{
+  document.getElementById("next-btn").classList.add('hide');
+}
+else{
+  document.getElementById("prev-btn").classList.remove('hide');
+  document.getElementById("next-btn").classList.remove('hide');
+}
 
   markActive(index);
 }

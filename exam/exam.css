@@ -449,3 +449,6 @@ progress::-webkit-progress-value {
 .status-not-answered {
   background-color: red !important;
 }
+.hide{
+  visibility: hidden;
+}
