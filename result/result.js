@@ -10,7 +10,7 @@ window.onload = () => {
 
 document.getElementById('logout').addEventListener('click', function() {
   alert("Logging out...");
-  window.location.href = "login.html"; 
+  window.location.href = "/login.html"; 
 });
 
  
