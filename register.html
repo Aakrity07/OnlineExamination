@@ -107,7 +107,7 @@
             <div class="container">
                 <div class="row p-2">
                     <div class="">
-                        <input type="email" name="" id="" class="form-control"
+                        <input type="email" name="" id="email" class="form-control"
                             placeholder=" Enter email address">
                         <span class="error" id="emailerror"></span>
 
@@ -143,7 +143,7 @@
     <!-- </form> -->
     <script>
         const daySelect = document.getElementById("dob-day");
-        for (let d = 1; d < 32; d++) {
+        for (let d = 1; d <=31; d++) {
             const option = document.createElement("option");
             option.value = d;
             option.text = d;
@@ -152,6 +152,7 @@
 
         const yearSelect = document.getElementById("dob-year");
         const currentYear = new Date().getFullYear();
+
         for (let y = currentYear; y >= 1900; y--) {
             const option = document.createElement("option");
             option.value = y;
