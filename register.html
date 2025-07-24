@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RegisterExamination</title>
     <style>
-        .error{
+        .error {
             color: red;
         }
     </style>
@@ -16,130 +16,128 @@
 
 <body>
     <!-- <form method="post" onsubmit="return validation()"> -->
-        <div class="container text-center my-4">
-            <img src="elgoss.jpg" alt="elgoss" style="width: 200px; height: 50px;">
-        </div>
+    <div class="container text-center my-4">
+        <img src="elgoss.jpg" alt="elgoss" style="width: 200px; height: 50px;">
+    </div>
 
-        <div class="container shadow-lg rounded col-5  mt-2 mb-5 py-2">
+    <div class="container shadow-lg rounded col-5  mt-2 mb-5 py-2">
 
-            <h3 class="text-center pt-2">Create a new Account</h3>
-            <p class="text-center">Its Quick and easy</p>
-            <hr>
-            <div class="container">
-                <div class="row my-2">
-                    <div class="col-6">
-                        <input type="text" name="firstName" id="firstName" placeholder="first Name"
-                            class="form-control">
-                        <span class="error" id="fnameerror"></span>
-                    </div>
-                    <div class="col-6 ">
-                        <input type="text" name="lastName" id="lastName" placeholder="last Name" class="form-control">
-                        <span class="error" id="lnameerror"></span>
-
-                    </div>
+        <h3 class="text-center pt-2">Create a new Account</h3>
+        <p class="text-center">Its Quick and easy</p>
+        <hr>
+        <div class="container">
+            <div class="row my-2">
+                <div class="col-6">
+                    <input type="text" name="firstName" id="firstName" placeholder="first Name" class="form-control">
+                    <span class="error" id="fnameerror"></span>
                 </div>
-            </div>
-            <div class="container">
-                <span class="">Date of Birth?</span>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        <select name="" id="dob-day" class="form-select">
-                            <option value="" selected disabled>day</option>
-                        </select>
-                        <span class="error" id="dayerror"></span>
-
-                    </div>
-                    <div class="col-4">
-                        <select name="" id="dob-month" class="form-select">
-                            <option value="" selected disabled>Month</option>
-                            <option value="1">January</option>
-                            <option value="2">February</option>
-                            <option value="3">March</option>
-                            <option value="4">April</option>
-                            <option value="5">May</option>
-                            <option value="6">June</option>
-                            <option value="7">July</option>
-                            <option value="8">August</option>
-                            <option value="9">September</option>
-                            <option value="10">October</option>
-                            <option value="11">November</option>
-                            <option value="12">December</option>
-                        </select>
-                        <span class="error" id="montherror"></span>
-
-                    </div>
-                    <div class="col-4">
-                        <select name="" id="dob-year" class="form-select">
-                            <option value="" selected disabled>Year</option>
-                        </select>
-                        <span class="error" id="yearerror"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="container pt-2">
-                <span>Gender?</span>
-            </div>
-            <div class="row g-5 px-3 pb-2">
-                <div class="col-12 col-md-4">
-                    <div class="border rounded p-2 text-center">
-                        <label class="form-check-label" for="male">Male</label>
-                        <input class="form-check-input ms-2" type="radio" name="gender" id="male">
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="border rounded p-2 text-center">
-                        <label class="form-check-label" for="female">Female</label>
-                        <input class="form-check-input ms-2" type="radio" name="gender" id="female">
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="border rounded p-2 text-center">
-                        <label class="form-check-label" for="custom">Custom</label>
-                        <input class="form-check-input ms-2" type="radio" name="gender" id="custom">
-                        <span class="error" id="gendererror"></span>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row p-2">
-                    <div class="">
-                        <input type="email" name="" id="" class="form-control"
-                            placeholder=" Enter email address">
-                        <span class="error" id="emailerror"></span>
-
-                    </div>
+                <div class="col-6 ">
+                    <input type="text" name="lastName" id="lastName" placeholder="last Name" class="form-control">
+                    <span class="error" id="lnameerror"></span>
 
                 </div>
-                <div class="row p-2">
-                    <div class="">
-                        <input type="password" name="" id="pass" class="form-control" placeholder=" New password">
-                        <span class="error" id="passworderror"></span>
-
-                    </div>
-                </div>
-                <p class="small text-secondary ">Welcome to the Online Examination Portal! Register now to take your
-                    first
-                    step towards academic success.
-                    Our platform offers a smooth, secure, and user-friendly exam experience from the comfort of your
-                    home.
-                </p>
-                <p class="small text-secondary">Don’t miss the opportunity to test your knowledge, improve your
-                    performance,
-                    and achieve your goals. Join today and stay ahead in your learning journey!</p>
-            </div>
-            <div class="container d-flex justify-content-center">
-
-                <button class="btn btn-primary px-5 text-center align-item-center" type="submit" id="registerBtn"
-                >Sign Up</button>
-            </div>
-            <div class="container p-2 text-center">
-                <a href="login.html" class="">Already have an Account? </a>
             </div>
         </div>
+        <div class="container">
+            <span class="">Date of Birth?</span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <select name="" id="dob-day" class="form-select">
+                        <option value="" selected disabled>day</option>
+                    </select>
+                    <span class="error" id="dayerror"></span>
+
+                </div>
+                <div class="col-4">
+                    <select name="" id="dob-month" class="form-select">
+                        <option value="" selected disabled>Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <span class="error" id="montherror"></span>
+
+                </div>
+                <div class="col-4">
+                    <select name="" id="dob-year" class="form-select">
+                        <option value="" selected disabled>Year</option>
+                    </select>
+                    <span class="error" id="yearerror"></span>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-2">
+            <span>Gender?</span>
+        </div>
+        <div class="row g-5 px-3 pb-2">
+            <div class="col-12 col-md-4">
+                <div class="border rounded p-2 text-center">
+                    <label class="form-check-label" for="male">Male</label>
+                    <input class="form-check-input ms-2" type="radio" name="gender" id="male">
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="border rounded p-2 text-center">
+                    <label class="form-check-label" for="female">Female</label>
+                    <input class="form-check-input ms-2" type="radio" name="gender" id="female">
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="border rounded p-2 text-center">
+                    <label class="form-check-label" for="custom">Custom</label>
+                    <input class="form-check-input ms-2" type="radio" name="gender" id="custom">
+                    <span class="error" id="gendererror"></span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row p-2">
+                <div class="">
+                    <input type="email" name="" id="" class="form-control" placeholder=" Enter email address">
+                    <span class="error" id="emailerror"></span>
+
+                </div>
+
+            </div>
+            <div class="row p-2">
+                <div class="">
+                    <input type="password" name="" id="pass" class="form-control" placeholder=" New password">
+                    <span class="error" id="passworderror"></span>
+
+                </div>
+            </div>
+            <p class="small text-secondary ">Welcome to the Online Examination Portal! Register now to take your
+                first
+                step towards academic success.
+                Our platform offers a smooth, secure, and user-friendly exam experience from the comfort of your
+                home.
+            </p>
+            <p class="small text-secondary">Don’t miss the opportunity to test your knowledge, improve your
+                performance,
+                and achieve your goals. Join today and stay ahead in your learning journey!</p>
+        </div>
+        <div class="container d-flex justify-content-center">
+
+            <button class="btn btn-primary px-5 text-center align-item-center" type="submit" id="registerBtn">Sign
+                Up</button>
+        </div>
+        <div class="container p-2 text-center">
+            <a href="login.html" class="">Already have an Account? </a>
+        </div>
+    </div>
     <!-- </form> -->
     <script>
         const daySelect = document.getElementById("dob-day");
@@ -208,59 +206,57 @@
             }
             if (day !== "" && month !== "" && year !== "") {
                 let date = new Date(year, month - 1, day);
-                if (date.getDate() != day || date.getMonth() != month - 1 || date.getFullYear() != year){
+                if (date.getDate() != day || date.getMonth() != month - 1 || date.getFullYear() != year) {
                     document.getElementById("dayerror").textContent = "Invalid date";
                     return false;
                 }
             }
-            if(!gender){
-                document.getElementById("gendererror").textContent="Please select the Gender"
+            if (!gender) {
+                document.getElementById("gendererror").textContent = "Please select the Gender"
             }
             var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if(!emailRegex.test(email)){
-                document.getElementById("emailerror").textContent="Invalid email ID";
+            if (!emailRegex.test(email)) {
+                document.getElementById("emailerror").textContent = "Invalid email ID";
                 return false;
             }
-            var passRegex=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-            if(!passRegex.test(password)){
-                document.getElementById("passworderror").innerHTML="<strong>Invalid password</strong> Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character:"
+            var passRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            if (!passRegex.test(password)) {
+                document.getElementById("passworderror").innerHTML = "<strong>Invalid password</strong> Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character:"
                 return false;
             }
-            
+
             fetch("/register", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ firstName, lastName, email, password })
-  })
-    .then(async res => {
-      const msg = await res.text();
-      console.log("Status:", res.status);
-      console.log("Message:", msg);
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ firstName, lastName, email, password })
+            })
+                .then(async res => {
+                    const msg = await res.text();
+                    console.log("Status:", res.status);
+                    console.log("Message:", msg);
 
-      if (!res.ok) {
-        alert("❌ Error: " + msg);
-        return;
-      }
+                    if (!res.ok) {
+                        alert("❌ Error: " + msg);
+                        return;
+                    }
 
-      alert("✅ " + msg); // this shows in pop-up
-      if (msg === "Registration successful") {
-        window.location.href = "login.html";
-      }
-    })
-    .catch(err => {
-      alert("🌐 Network error: " + err);
-    });
+                    alert("✅ " + msg); // this shows in pop-up
+                    if (msg === "Registration successful") {
+                        let fn = document.getElementById("firstName").value;
+                        let ln = document.getElementById("lastName").value;
+                        let fullName = fn + " " + ln;
+
+                        localStorage.setItem("user", fullName);
+                        window.location.href = "login.html";
+                    }
+
+                })
+                .catch(err => {
+                    alert("🌐 Network error: " + err);
+                });
         });
 
-            
 
-                 
-        
-        
-        
-        // function validation() {
-            
-        // }
     </script>
 </body>
 

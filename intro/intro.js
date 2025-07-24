@@ -47,6 +47,12 @@ function startCountdown() {
   // Initial call to display immediately
   updateCountdown();
 }
+(()=>{
+  let user=localStorage.getItem("user");
+  //console.log(user);
+  let display=document.querySelector('.user');
+  display.innerText=user;
+})();
 
 
 
