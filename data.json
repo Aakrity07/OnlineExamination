@@ -1,1 +1,14 @@
-[{"firstName":"Ragini","lastName":"Dwivedi","email":"677@gmail.com","password":"Harsh@1234"},{"firstName":"Harsh ","lastName":"Rai","email":"harshkrrai24685@gmail.com","password":"Harsh@1234"}]
+[
+    {
+        "firstName": "Ragini",
+        "lastName": "Dwivedi",
+        "email": "677@gmail.com",
+        "password": "Harsh@1234"
+    },
+    {
+        "firstName": "Harsh ",
+        "lastName": "Rai",
+        "email": "harshkrrai24685@gmail.com",
+        "password": "Harsh@1234"
+    }
+]
