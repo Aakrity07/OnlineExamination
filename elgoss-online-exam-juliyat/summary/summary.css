@@ -1,0 +1,57 @@
+body {
+  background-color:azure !important;
+}
+.nav {
+  background-color: #007bff;
+  color: white;
+  padding:15px;
+  border-radius: 5px;
+  /* text-align:center; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+    background-color:azure;
+}
+.card {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.card-body .quest p {
+  margin-bottom: 5px;
+}
+.img img {
+  width: 4em;
+  height: 4em;
+  object-fit: contain;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left {
+  background-color: rgb(237, 233, 233);
+  border-radius: 10px;
+  padding: 20px 20px 20px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+}
+
+.right {
+  background-color: rgb(237, 233, 233);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card {
+  margin-top: 20px;
+}

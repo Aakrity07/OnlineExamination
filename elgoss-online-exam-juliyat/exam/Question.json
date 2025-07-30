@@ -1,0 +1,222 @@
+[
+    {
+        "id": "Q1",
+        "question": "What comes next in the sequence? 2, 6, 12, 20, 30, ?",
+        "options": [
+            "40",
+            "42",
+            "36",
+            "38"
+        ],
+        "answer": "42"
+    },
+    {
+        "id": "Q2",
+        "question": "What comes next in the pattern? 1, 4, 9, 16, ?",
+        "options": [
+            "20",
+            "24",
+            "25",
+            "36"
+        ],
+        "answer": "25"
+    },
+    {
+        "id": "Q3",
+        "question": "What comes next? A, C, F, J, O, ?",
+        "options": [
+            "S",
+            "T",
+            "U",
+            "V"
+        ],
+        "answer": "V"
+    },
+    {
+        "id": "Q4",
+        "question": "A clock shows 3:15. What is the angle between the hour and minute hand?",
+        "options": [
+            "0°",
+            "7.5°",
+            "30°",
+            "45°"
+        ],
+        "answer": "7.5°"
+    },
+    {
+        "id": "Q5",
+        "question": "Mary is 16 years old. Her brother is half her age. When Mary is 30, how old will her brother be?",
+        "options": [
+            "15",
+            "22",
+            "28",
+            "30"
+        ],
+        "answer": "22"
+    },
+    {
+        "id": "Q6",
+        "question": "Which number should replace the question mark? 3, 6, 9, 12, ?",
+        "options": [
+            "15",
+            "14",
+            "13",
+            "16"
+        ],
+        "answer": "15"
+    },
+    {
+        "id": "Q7",
+        "question": "Which one of the following numbers is the odd one out? 3, 7, 13, 17, 20",
+        "options": [
+            "3",
+            "7",
+            "13",
+            "20"
+        ],
+        "answer": "20"
+    },
+    {
+        "id": "Q8",
+        "question": "Which number comes next? 1, 1, 2, 6, 24, ?",
+        "options": [
+            "120",
+            "48",
+            "72",
+            "50"
+        ],
+        "answer": "120"
+    },
+    {
+        "id": "Q9",
+        "question": "What is the next letter in the series? A, D, G, J, ?",
+        "options": [
+            "K",
+            "L",
+            "M",
+            "N"
+        ],
+        "answer": "M"
+    },
+    {
+        "id": "Q10",
+        "question": "Which word does not belong? Apple, Banana, Carrot, Grape",
+        "options": [
+            "Apple",
+            "Banana",
+            "Carrot",
+            "Grape"
+        ],
+        "answer": "Carrot"
+    },
+    {
+        "id": "Q11",
+        "question": "If two pencils cost 50 cents, how much would 18 pencils cost?",
+        "options": [
+            "4.50",
+            "4.00",
+            "5.00",
+            "9.00"
+        ],
+        "answer": "4.50"
+    },
+    {
+        "id": "Q12",
+        "question": "Which of the following is the largest? 0.4, 1/3, 0.25, 1/2",
+        "options": [
+            "0.4",
+            "1/3",
+            "0.25",
+            "1/2"
+        ],
+        "answer": "1/2"
+    },
+    {
+        "id": "Q13",
+        "question": "Which one of these shapes is different from the others? Square, Rectangle, Triangle, Circle",
+        "options": [
+            "Square",
+            "Rectangle",
+            "Triangle",
+            "Circle"
+        ],
+        "answer": "Circle"
+    },
+    {
+        "id": "Q14",
+        "question": "If a bat and a ball cost $1.10 in total and the bat costs $1 more than the ball, how much does the ball cost?",
+        "options": [
+            "10 cents",
+            "5 cents",
+            "1 cent",
+            "20 cents"
+        ],
+        "answer": "10 cents"
+    },
+    {
+        "id": "Q15",
+        "question": "What is the number missing in the series? 2, 5, 10, 17, 26, ?",
+        "options": [
+            "37",
+            "34",
+            "40",
+            "35"
+        ],
+        "answer": "37"
+    },
+    {
+        "id": "Q16",
+        "question": "If the day after tomorrow is two days before Thursday, what day is today?",
+        "options": [
+            "Monday",
+            "Wednesday",
+            "Tuesday",
+            "Friday"
+        ],
+        "answer": "Tuesday"
+    },
+    {
+        "id": "Q17",
+        "question": "Which one of the following does not belong? Monday, Wednesday, Thursday, Tuesday",
+        "options": [
+            "Monday",
+            "Wednesday",
+            "Thursday",
+            "Tuesday"
+        ],
+        "answer": "Thursday"
+    },
+    {
+        "id": "Q18",
+        "question": "Which of the following is the largest prime number? 11, 13, 17, 19",
+        "options": [
+            "11",
+            "13",
+            "17",
+            "19"
+        ],
+        "answer": "19"
+    },
+    {
+        "id": "Q19",
+        "question": "If you have two coins that total 30 cents and one of them is not a nickel, what are the two coins?",
+        "options": [
+            "Quarter and a nickel",
+            "Dime and a nickel",
+            "Two dimes",
+            "Two quarters"
+        ],
+        "answer": "Quarter and a nickel"
+    },
+    {
+        "id": "Q20",
+        "question": "Which number comes next in the sequence? 1, 4, 9, 16, ?",
+        "options": [
+            "25",
+            "20",
+            "22",
+            "30"
+        ],
+        "answer": "25"
+    }
+]

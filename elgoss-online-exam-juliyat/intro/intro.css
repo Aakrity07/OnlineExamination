@@ -1,0 +1,357 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color:azure;
+  min-height: 100vh;
+ 
+}
+
+
+.main-content-container {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 5px 5px 8px lightblue;
+
+}
+
+.img img {
+  width: 4em;
+  height: 4em;
+  object-fit: contain;
+}
+
+.img2 {
+  width: 14em; /* Changed from max-width/height auto to specific em units as in original code */
+  height: 12em;
+  opacity: 0.5;
+}
+
+.left {
+  background-color: #fffcf9;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+}
+
+@media (max-width: 767.98px) {
+  .left {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+     border-right: 6px solid rgb(196, 196, 196);
+    border-right: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .left {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+     border-right: 6px solid rgb(196, 196, 196);
+    border-bottom: none;
+  }
+}
+
+.Q {
+  text-align: center;
+  color: rgb(79, 79, 79);
+}
+
+.Q:hover {
+  border-top: 2px solid darkgray;
+}
+
+.right {
+  /* font-family: Arial, sans-serif; */
+  background-color: #ffffff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+@media (max-width: 767.98px) {
+  .right {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .right {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-top: 0;
+  }
+}
+
+.usersof {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size:px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 8px;
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#read {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.instructions {
+  background-color: white;
+  padding: 20px;
+}
+
+.instructions ol {
+  padding-left: 25px;
+  line-height: 1.6;
+}
+
+.instructions li {
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.instructions li:last-child {
+  margin-bottom: 0;
+}
+.button-container {
+  /* padding: 20px 0; */
+  text-align: center;
+}
+
+.btun {
+  display: inline-block; /* Changed from block to inline-block */
+  width: auto; /* Changed from fixed 200px */
+  min-width: 180px; /* Minimum width */
+  height: auto; /* Changed from fixed 35px */
+  padding: 10px 25px; /* Added padding for better touch targets */
+  /* margin: 20px auto; Center the button */
+  background-color: #0000ff;
+  color: white;
+  border-radius: 10px;
+  font-family: monospace;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  /* Removed absolute positioning */
+  position: relative;
+  /* Removed right and bottom properties */
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 767.98px) {
+  .btun {
+    width: 50%; /* Full width on mobile */
+    max-width: 300px; /* But not too wide */
+    padding: 9px 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .btun {
+    width: auto;
+    padding: 9px 30px;
+  }
+}
+
+.btun:hover {
+  background-color: rgb(0, 0, 200); /* Slightly darker on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btun:active {
+  background-color: rgb(0, 167, 97);
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.btun:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 255, 0.3);
+}
+
+.status-table {
+  box-shadow: 2px 2px 8px rgb(234, 234, 234);
+ 
+}
+
+.status-table tr {
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.status-table tr:last-child {
+  border-bottom: none;
+}
+
+.status-table td {
+  padding: 2px;
+  vertical-align: middle;
+}
+
+.status-table thead td {
+  border-bottom: none;
+  padding: 0;
+}
+
+.color-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  color: whitesmoke;
+  
+}
+
+.red-box {
+  background-color: #fc1900;
+  border-radius: 21%;
+  width: 20px;
+  height: 20px;
+}
+
+.green-box {
+  background-color: #00ff6a;
+  border-radius: 21%;
+  width: 20px;
+  height: 20px;
+}
+
+.yellow-box {
+  background-color: #ffd000;
+  border-radius: 21%;
+  width: 20px;
+  height: 20px;
+  color: #333;
+}
+
+.blue-box {
+  background-color: #0026ff;
+  border-radius: 21%;
+  width: 20px;
+  height: 20px;
+}
+.Gray-box {
+  background-color: #929292;
+  border-radius: 21%;
+  width: 20px;
+  height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Removed the following styles as they are not used in the provided HTML: */
+/*
+.status-table {
+  width: 100%;
+  margin: 15px 0;
+  box-shadow: 2px 2px 8px rgb(234, 234, 234);
+}
+
+.status-table tr {
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.status-table tr:last-child {
+  border-bottom: none;
+}
+
+.status-table td {
+  padding: 2px;
+  vertical-align: middle;
+}
+
+.status-table thead td {
+  border-bottom: none;
+  padding: 0;
+}
+
+.color-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  color: whitesmoke;
+  font-size: x-large;
+}
+
+.red-box {
+  background-color: #fc1900;
+  border-radius: 21%;
+  width: 20px;
+  height: 20px;
+}
+
+.green-box {
+  background-color: #00ff6a;
+  border-radius: 21%;
+  width: 20px;
+  height: 20px;
+}
+
+.yellow-box {
+  background-color: #ffd000;
+  border-radius: 21%;
+  width: 20px;
+  height: 20px;
+  color: #333;
+}
+
+.blue-box {
+  background-color: #0026ff;
+  border-radius: 21%;
+  width: 20px;
+  height: 20px;
+}
+.Gray-box {
+  background-color: #929292;
+  border-radius: 21%;
+  width: 20px;
+  height: 20px;
+}
+*/
