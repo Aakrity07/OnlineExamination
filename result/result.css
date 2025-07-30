@@ -1,0 +1,16 @@
+body {
+  background:azure;
+}
+
+.result-card {
+  border-radius: 20px;
+  max-width: 400px;
+  background: white;
+}
+
+@media (max-width: 576px) {
+  .result-card {
+    margin: 20px;
+    padding: 20px;
+  }
+}
